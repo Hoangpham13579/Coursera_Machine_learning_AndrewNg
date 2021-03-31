@@ -1,0 +1,26 @@
+- np.ravel() or np.flatten(): flatten the array 
+Means transform from 2D array to 1D array
+
+- Difference types of "kernel" in "svm.SVC()" function
++) "linear" kernel: used when input training data into "model.fit()" function (Without using "f" value)
++) "precomputed" kernel: used when input "f" matrix & y training dataset into "model.fit()" function
+("f" must be square matrix) --> "Gaussian" kernel matrix with "l" (landmark) is set as X 
+
+- "levels=" in "ax.contour()": modify the position of contour (đường viền) on the grid
+
+- Regex:
++) "\s": matching all whitespace characters [ \r\n\t\f ]
++) "\S": Matching all non-whitespace characters (or [^\s]) ("^" means NOT)
+
+- Difference between "clf.predict()" and "clf.score()":
++) clf.predict(X) return vector prediction (m,) (1D array)
++) clf.score(X, y): X:(m, n) y:(m, 1) return directly the accuracy of model 
+
+- Difference between "arr.reshape(-1, n)" and "arr.reshape(n, -1)"
++) ".reshape(-1, n)": flatten array (axis=0) and reshape it in n columns
++) ".reshape(n, -1)": flatten array (axis=1) and reshape it in n rows 
+
+ 
+QUESTIONS:
+- Why do we need to create grid for evaluating model in "plot_boundary()" function????
+
