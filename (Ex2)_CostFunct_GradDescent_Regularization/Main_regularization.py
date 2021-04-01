@@ -8,7 +8,7 @@ import scipy.optimize as opt
 
 
 # Load dataset
-data2 = np.loadtxt("ex2data2.txt", delimiter=",")
+data2 = np.loadtxt("data/ex2data2.txt", delimiter=",")
 X = data2[:, :2]
 y = data2[:, -1]
 
