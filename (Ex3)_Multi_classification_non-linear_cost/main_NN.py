@@ -15,7 +15,7 @@ num_labels = 10  # 10 labels, from 1 to 10
 print("Loading and visualizing data")
 
 # Load training data
-data = scipy.io.loadmat("ex3data1.mat")
+data = scipy.io.loadmat("data/ex3data1.mat")
 X = data["X"]  # (5000, 400)
 y = data["y"]  # (5000, 1)
 (m, n) = X.shape
@@ -36,7 +36,7 @@ input("Press Enter to continue...")  # Stop for a moment
 ################ (2) Loading parameters ####################
 # Install some pre-initialized neural network parameters
 print("Loading saving theta parameters...")
-initialTheta = scipy.io.loadmat("ex3weights.mat")
+initialTheta = scipy.io.loadmat("data/ex3weights.mat")
 theta1 = initialTheta["Theta1"]
 theta2 = initialTheta["Theta2"]
 
