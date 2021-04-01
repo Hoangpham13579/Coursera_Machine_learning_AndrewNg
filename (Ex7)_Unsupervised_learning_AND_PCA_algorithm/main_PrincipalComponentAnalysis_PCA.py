@@ -12,7 +12,7 @@ from recoverData import recover_data
 # In this exercise, we'll use principal component analysis (PCA) to perform dimensionality reduction.
 ########### Implement PCA on 2D dataset ####################
 print(f"Plotting data example 1")
-data1 = scipy.io.loadmat("ex7data1.mat")
+data1 = scipy.io.loadmat("data/ex7data1.mat")
 sns.scatterplot(data1["X"][:, 0], data1["X"][:, 1])
 plt.show()
 
@@ -27,7 +27,7 @@ U, S = pca(X_norm)
 # Visualize the dimensional reduction data resulted by PCA
 # Visualize original data
 print(f"\nVisualize dimensional reduction data")
-data1 = scipy.io.loadmat("ex7data1.mat")
+data1 = scipy.io.loadmat("data/ex7data1.mat")
 ax = sns.scatterplot(data1["X"][:, 0], data1["X"][:, 1])
 # Compute & visualize compressed data (Z)
 p1 = mu  # (1, 2)
@@ -70,7 +70,7 @@ input("Pause program, Press enter to continue")
 
 ################## Face image dataset ######################
 # Loading faces data
-faces_data = scipy.io.loadmat("ex7faces.mat")
+faces_data = scipy.io.loadmat("data/ex7faces.mat")
 # Visualize the first 100 pic of faces
 print("\nVisualize the first 100 pictures of faces")
 rows = 7
