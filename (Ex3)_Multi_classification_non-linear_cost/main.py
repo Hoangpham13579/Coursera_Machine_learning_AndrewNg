@@ -17,7 +17,7 @@ num_labels = 10  # 10 labels, from 1 to 10
 ########### (1) Load and visualizing data ###############
 # (ex3data1.mat): each example is an array (400 element -> 20*20) representing an image of a label
 # Load training data
-data = scipy.io.loadmat("ex3data1.mat")
+data = scipy.io.loadmat("data/ex3data1.mat")
 X = data["X"]  # (5000, 400)
 y = data["y"]  # (5000, 1)
 (m, n) = X.shape
