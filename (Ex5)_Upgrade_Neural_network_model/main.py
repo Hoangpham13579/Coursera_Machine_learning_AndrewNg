@@ -13,7 +13,7 @@ from validationCurve import validation_curve
 print("Loading train/validation/test data set")
 
 # Load training data
-data = scipy.io.loadmat("ex5data1.mat")
+data = scipy.io.loadmat("data/ex5data1.mat")
 X = data["X"]  # X: (12, 1)
 y = data["y"]  # y: (12, 1)
 X_vali = data["Xval"]  # X_vali: (21, 1)
