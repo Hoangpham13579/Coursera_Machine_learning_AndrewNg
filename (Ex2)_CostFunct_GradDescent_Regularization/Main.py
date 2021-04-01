@@ -7,7 +7,7 @@ from PredictFunction import logistic_prediction
 
 
 # Load dataset
-data = np.loadtxt("ex2data1.txt", delimiter=",")
+data = np.loadtxt("data/ex2data1.txt", delimiter=",")
 X = data[:, :2]
 y = data[:, -1]
 
