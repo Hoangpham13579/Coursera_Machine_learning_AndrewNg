@@ -16,13 +16,13 @@ from findClosestCentroids import find_closest_centroid
 # on the image, we use these 16 colors to replace colors in image (Means compress image to only 16 colors)
 
 # Load image & show PNG image
-fname = "bird_small.png"
+fname = "data/bird_small.png"
 plt.imshow(Image.open(fname))
 plt.axis("off")
 plt.show()
 
 # Load image array file of "bird_small.png"
-bird_mat = scipy.io.loadmat("bird_small.mat")
+bird_mat = scipy.io.loadmat("data/bird_small.mat")
 A = bird_mat["A"]
 
 # Scaling and Reducing dimension to 2D array
