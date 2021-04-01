@@ -20,7 +20,7 @@ num_labels = 10  # 10 labels from 1 to 10
 print("Loading and visualizing data")
 
 # Load training data
-data = scipy.io.loadmat("ex4data1.mat")
+data = scipy.io.loadmat("data/ex4data1.mat")
 X = data["X"]  # (5000, 400)
 y = data["y"]  # (5000, 1)
 (m, n) = X.shape
@@ -40,7 +40,7 @@ input("Press Enter to continue...")  # Stop for a moment
 ######### (2) Loading parameters ################
 # Install some pre-initialized neural network parameters
 print("\nLoading saving theta parameters...")
-initialTheta = scipy.io.loadmat("ex4weights.mat")
+initialTheta = scipy.io.loadmat("data/ex4weights.mat")
 Theta1 = initialTheta["Theta1"]
 Theta2 = initialTheta["Theta2"]
 
@@ -58,7 +58,7 @@ lambdas = 1
 J, _ = nn_cost_function(nn_params, input_layer_size,
                      hidden_layer_size, num_labels, X, y, lambdas)
 
-print("Cost at parameter (ex4weights.mat): ", J)
+print("Cost at parameter (data/ex4weights.mat): ", J)
 print("This value should be 0.383770")
 input("Press Enter to continue...")  # Stop for a moment
 
