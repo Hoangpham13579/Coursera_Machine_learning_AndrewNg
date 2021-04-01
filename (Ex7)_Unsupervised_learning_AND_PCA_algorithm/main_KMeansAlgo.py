@@ -11,7 +11,7 @@ from KmeansAlgo import kmeans_algo
 print(f"Find the closest centroids")
 
 # Loading the example dataset
-data2 = scipy.io.loadmat("ex7data2.mat")
+data2 = scipy.io.loadmat("data/ex7data2.mat")
 
 # Find the closest centroid with with initial K=3
 K = 3
