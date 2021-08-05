@@ -1,5 +1,4 @@
 # Coursera Machine learning Stanford
-# Machine learning definition & Learning topic
 
 - **Arthur Samuel (1959)**
 
